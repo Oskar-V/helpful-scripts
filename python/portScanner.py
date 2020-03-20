@@ -14,6 +14,8 @@ verbose = False
 default_timeout = 1
 
 default_port_list = {
+    20: "FTP data transfer",
+    21: "FTP control",
     22: "SSH",
     80: "HTTP",
     23: "Telnet",
