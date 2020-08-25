@@ -74,7 +74,7 @@ class Scanner(Thread):
 
     def write(self, Print=False):
         # If output file was specified, write data there, otherwise display output on console
-        if self.output is not "" and not Print:
+        if self.output != "" and self.output != Print:
             with open(self.output, 'w+') as f:
                 if verbose:
                     f.write(
